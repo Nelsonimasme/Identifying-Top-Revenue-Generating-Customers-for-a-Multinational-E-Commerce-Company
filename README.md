@@ -107,33 +107,23 @@ bikes_df.head()
 
 - **1. Check for Missing values**:
 
+
 ```python
 # solution 
 bikes_df.isna().any()
-```
-
-## counting the number of missing values 
-
-### solution 
-``` python
-total_number_of_missing_values_by_columns = bikes_df.isna().sum()
-
-total_number_of_missing_values_by_columns
 
 ```
 
 ```python
-# visualizing total numbers of missing values
+# counting the number of missing values 
 
-import matplotlib.pyplot as plt
+# solution 
+total_number_of_missing_values_by_columns = bikes_df.isna().sum()
 
-total_number_of_missing_values_by_columns.plot(kind = "bar")
-
-# to show yoyr plot
-plt.show() 
+total_number_of_missing_values_by_columns
 ```
 
-### 2.Handling Missing values:
+ **2.Handling Missing values**: 
 
 ```python
 # solution 
@@ -145,35 +135,33 @@ bikes_df["ProductColor"].mode()
 # bikes_df.fillna()
 ```
 
+ ```python
+# replacing the missing Value
+# solution
+
+bikes_df = bikes_df.fillna("Black")
+bikes_df
+```
+
 ```python
 # to veryfiy that there are no more  missing Values
 
 bikes_df.isna().any()
+
 ```
+
 
 - **3. Check for  Duplicates**:
 
-  ```python
+```python
 # Dropping any duplicates if any exists
 
 # solution
 
 bikes_df.drop_duplicates(inplace = True)
 
-  ```
-
-- **4. Handling Duplicates**:
-
-```python
-# re-counting our data point again
-
-###solution
-len(bikes_df)
-
-# This shows that there was no duplicate in our dataet
-
 ```
 
 
 
- 
+  
