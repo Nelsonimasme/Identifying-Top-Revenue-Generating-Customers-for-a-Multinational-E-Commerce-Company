@@ -112,6 +112,40 @@ bikes_df.head()
 bikes_df.isna().any()
 ```
 
+## counting the number of missing values 
+
+### solution 
+``` python
+total_number_of_missing_values_by_columns = bikes_df.isna().sum()
+
+total_number_of_missing_values_by_columns
+
+```
+
+```python
+# visualizing total numbers of missing values
+
+import matplotlib.pyplot as plt
+
+total_number_of_missing_values_by_columns.plot(kind = "bar")
+
+# to show yoyr plot
+plt.show() 
+```
+
+### 2.Handling Missing values:
+
+```python
+# solution 
+
+# how to get the most popular value
+# solution
+bikes_df["ProductColor"].mode()
+
+# bikes_df.fillna()
+```
+
+
 
 
 
