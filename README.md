@@ -39,12 +39,13 @@ This project serves as a practical application of data science principles in the
 
 7. **To Lay the Groundwork for Predictive Modeling**
    * By Establishing a foundational dataset and insights that could be extended into customer lifetime value prediction or churn modeling in future phases.
-  
-     ### Data Source
-     **The Company's central transaction database**
 
-     ### Project Methodology
-     - **Data Collection**: Data was collected from the Company's Central Transaction Database
+
+ ### Data Source
+  **The Company's central transaction database**
+
+### Project Methodology
+  **Data Collection**: Data was collected from the Company's Central Transaction Database
 
 - **Data Pre-processing**: Loaded the data from a CSV file into a Pandas Dataframe
 
@@ -336,7 +337,8 @@ ratio
 ```
 
 
-<img width="502" height="254" alt="data_sorting_data_ranking" src="https://github.com/user-attachments/assets/438a7eee-6083-4d85-99ed-8f314b7870a2" />
+<img width="653" height="319" alt="total_revenue_of_the_top_10_customers" src="https://github.com/user-attachments/assets/b6176bcd-4ac5-40e8-915b-d912c6373066" />
+
 
 
 ```python
